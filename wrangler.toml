@@ -2,6 +2,9 @@ name = "mcpe-control-relay"
 main = "worker.js"
 compatibility_date = "2024-02-08"
 
-# KV binding 'CTL' + secrets KAGGLE_USER / KAGGLE_KEY are added in the
-# Cloudflare dashboard under the Worker's Settings -> Bindings (after deploy).
-# DO NOT put secrets here.
+[[kv_namespaces]]
+binding = "CTL"
+id = "89830ee3e4d84d3081f1426ce0c8d9b9"
+
+# Secrets KAGGLE_KEY (and optional REGISTER_KEY) are set in the Cloudflare
+# dashboard under Settings -> Variables and Secrets. Do NOT put secrets here.
